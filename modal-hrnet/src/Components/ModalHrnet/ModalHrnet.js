@@ -7,7 +7,9 @@ export default function ModalHrnet({openModal}) {
     return (
       <div className='modal-container'>
         <div className="modal-content">
-          <p>Your employee has been created success ! </p>
+          <div className='modal-content__header text--center mb--md'>
+            <p className='title--lg'>Your employee has been created success ! </p>
+          </div>
           <div className="modal-content__ctas flex">
             <button className='btn--plain btn--green'>Return to board</button>
             <button className='btn--plain btn--green'>Add a new employee</button>
