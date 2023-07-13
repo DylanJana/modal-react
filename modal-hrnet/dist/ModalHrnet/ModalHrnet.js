@@ -16,9 +16,9 @@ export default function ModalHrnet({
     }, "Your employee has been created success ! ")), /*#__PURE__*/React.createElement("div", {
       className: "modal-content__ctas flex"
     }, /*#__PURE__*/React.createElement("button", {
-      className: "btn--plain btn--green"
+      className: "btn--plain btn--green btn-modal"
     }, "Return to board"), /*#__PURE__*/React.createElement("button", {
-      className: "btn--plain btn--green"
+      className: "btn--plain btn--green btn-modal"
     }, "Add a new employee"))));
   } else {
     console.log("FORM NOCOMPLETE");
