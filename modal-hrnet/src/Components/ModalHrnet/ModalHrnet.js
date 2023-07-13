@@ -1,10 +1,10 @@
 import React from 'react'
 import './ModalHrnet.css'
 
-export default function ModalHrnet() {
+export default function ModalHrnet({children}) {
   return (
     <div>
-      Hello modale
+      {children}
     </div>
   )
 }
