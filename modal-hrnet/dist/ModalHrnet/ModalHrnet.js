@@ -14,7 +14,7 @@ export default function ModalHrnet({
     }, /*#__PURE__*/React.createElement("p", {
       className: "title--lg"
     }, "Your employee has been created success ! ")), /*#__PURE__*/React.createElement("div", {
-      className: "modal-content__ctas flex"
+      className: "modal-content__ctas flex justify-content--center"
     }, /*#__PURE__*/React.createElement("button", {
       className: "btn--plain btn--green btn-modal"
     }, "Return to board"), /*#__PURE__*/React.createElement("button", {
