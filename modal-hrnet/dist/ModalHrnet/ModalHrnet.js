@@ -9,7 +9,11 @@ export default function ModalHrnet({
       className: "modal-container"
     }, /*#__PURE__*/React.createElement("div", {
       className: "modal-content"
-    }, /*#__PURE__*/React.createElement("p", null, "Your employee has been created success ! "), /*#__PURE__*/React.createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "modal-content__header text--center mb--md"
+    }, /*#__PURE__*/React.createElement("p", {
+      className: "title--lg"
+    }, "Your employee has been created success ! ")), /*#__PURE__*/React.createElement("div", {
       className: "modal-content__ctas flex"
     }, /*#__PURE__*/React.createElement("button", {
       className: "btn--plain btn--green"
