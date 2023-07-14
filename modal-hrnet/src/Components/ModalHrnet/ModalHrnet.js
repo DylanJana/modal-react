@@ -1,9 +1,10 @@
 import React from 'react'
 import './ModalHrnet.css'
 
-export default function ModalHrnet({openModal}) {
+export default function ModalHrnet({openModal, onClose, resetForm}) {
+  let body = document.querySelector('body')
   if(openModal === true) {
-    console.log("FORM CORRECT")
+    body.classList.add('no--scroll')
     return (
       <div className='modal-container'>
         <div className="modal-content">
@@ -11,13 +12,22 @@ export default function ModalHrnet({openModal}) {
             <p className='title--lg'>Your employee has been created success ! </p>
           </div>
           <div className="modal-content__ctas flex justify-content--center">
-            <button className='btn--plain btn--green btn-modal'>Return to board</button>
-            <button className='btn--plain btn--green btn-modal'>Add a new employee</button>
+            <button 
+            className='btn--plain btn--green btn-modal'
+            onClick={onClose}
+            >
+              Return to board
+            </button>
+            <button 
+            className='btn--plain btn--green btn-modal'
+            onClick={resetForm}>
+              Add a new employee
+            </button>
           </div>
         </div>
       </div>
     )
   } else {
-    console.log("FORM NOCOMPLETE")
+    body.classList.remove('no--scroll')
   }
 }

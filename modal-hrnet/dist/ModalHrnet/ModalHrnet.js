@@ -1,10 +1,13 @@
 import React from 'react';
 import './ModalHrnet.css';
 export default function ModalHrnet({
-  openModal
+  openModal,
+  onClose,
+  resetForm
 }) {
+  let body = document.querySelector('body');
   if (openModal === true) {
-    console.log("FORM CORRECT");
+    body.classList.add('no--scroll');
     return /*#__PURE__*/React.createElement("div", {
       className: "modal-container"
     }, /*#__PURE__*/React.createElement("div", {
@@ -16,11 +19,13 @@ export default function ModalHrnet({
     }, "Your employee has been created success ! ")), /*#__PURE__*/React.createElement("div", {
       className: "modal-content__ctas flex justify-content--center"
     }, /*#__PURE__*/React.createElement("button", {
-      className: "btn--plain btn--green btn-modal"
+      className: "btn--plain btn--green btn-modal",
+      onClick: onClose
     }, "Return to board"), /*#__PURE__*/React.createElement("button", {
-      className: "btn--plain btn--green btn-modal"
+      className: "btn--plain btn--green btn-modal",
+      onClick: resetForm
     }, "Add a new employee"))));
   } else {
-    console.log("FORM NOCOMPLETE");
+    body.classList.remove('no--scroll');
   }
 }
