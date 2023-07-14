@@ -9,7 +9,7 @@ export default function ModalHrnet({openModal, onClose, resetForm}) {
       <div className='modal-container'>
         <div className="modal-content">
           <div className='modal-content__header text--center mb--md'>
-            <p className='title--lg'>Your employee has been created success ! </p>
+            <p className='title--lg'>Your employee has been created success&nbsp;! </p>
           </div>
           <div className="modal-content__ctas flex justify-content--center">
             <button 
