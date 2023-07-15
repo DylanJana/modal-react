@@ -1,4 +1,3 @@
-import './App.css';
 import ModalHrnet from './Components/ModalHrnet/ModalHrnet';
 
 function App() {
