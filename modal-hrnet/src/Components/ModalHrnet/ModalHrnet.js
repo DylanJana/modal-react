@@ -1,5 +1,17 @@
-import React from 'react'
 import './ModalHrnet.css'
+
+  /**
+  * Saves the obtained values ​​and manages their types. After update state
+  *
+  * @params boolean
+  * @params function = navigateToEmployeesTable, this function is in main project Hrnet. When user click
+  * on "Return to board" button, he's navigate to board page
+  * @params function = resetForm,  this function is in main project Hrnet. When user click
+  * on "Add a new employee" button, the form is reset
+  * 
+  * @author Dylan
+  * @version 1.0
+  */
 
 export default function ModalHrnet({openModal, onClose, resetForm}) {
   let body = document.querySelector('body')
