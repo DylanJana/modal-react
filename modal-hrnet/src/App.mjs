@@ -1,4 +1,4 @@
-import ModalHrnet from './Components/ModalHrnet/ModalHrnet';
+import ModalHrnet from './Components/ModalHrnet/ModalHrnet.mjs';
 
 function App() {
   return (
