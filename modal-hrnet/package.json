@@ -2,6 +2,7 @@
   "name": "dylan-modal-hrnet",
   "version": "0.2.3",
   "private": false,
+  "type": "module",
   "babel": {
     "presets": [
       "@babel/preset-react"
